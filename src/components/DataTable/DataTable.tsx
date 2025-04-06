@@ -537,7 +537,8 @@ export function DataTableDemo() {
                         <option value={100}>100</option>
                     </select>
                 </div>
-
+                
+                {/* Phân trang */}
                 <div className="space-x-2">
                     <Pagination>
                         <PaginationContent>
