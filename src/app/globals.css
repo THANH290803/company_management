@@ -145,6 +145,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+  
   body {
     @apply bg-background text-foreground;
   }
@@ -153,4 +154,15 @@
 .disabled {
     pointer-events: none; /* Không cho phép click vào nút */
     opacity: 0.5; /* Làm mờ nút */
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
