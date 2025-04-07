@@ -13,7 +13,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import { DataTableDemo } from "@/components/DataTable/DataTable"
+import { DataTableDemo } from "@/components/Table/DataTable"
 
 // Hello
 
