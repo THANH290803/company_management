@@ -35,42 +35,287 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
+import {
+    Pagination,
+    PaginationContent,
+    PaginationEllipsis,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from "@/components/ui/pagination"
+
 const data: Payment[] = [
     {
         id: "m5gr84i9",
         amount: 316,
         status: "success",
-        email: "ken99@yahoo.com",
+        email: "ken99@example.com",
     },
     {
         id: "3u1reuv4",
         amount: 242,
         status: "success",
-        email: "Abe45@gmail.com",
+        email: "Abe45@example.com",
     },
     {
         id: "derv1ws0",
         amount: 837,
         status: "processing",
-        email: "Monserrat44@gmail.com",
+        email: "Monserrat44@example.com",
     },
     {
         id: "5kma53ae",
         amount: 874,
         status: "success",
-        email: "Silas22@gmail.com",
+        email: "Silas22@example.com",
     },
     {
         id: "bhqecj4p",
         amount: 721,
         status: "failed",
-        email: "carmella@hotmail.com",
+        email: "carmella@example.com",
     },
     {
-        id: "dsđs",
-        amount: 73,
+        id: "m5gr84i9",
+        amount: 316,
+        status: "success",
+        email: "ken99@example.com",
+    },
+    {
+        id: "3u1reuv4",
+        amount: 242,
+        status: "success",
+        email: "Abe45@example.com",
+    },
+    {
+        id: "derv1ws0",
+        amount: 837,
+        status: "processing",
+        email: "Monserrat44@example.com",
+    },
+    {
+        id: "5kma53ae",
+        amount: 874,
+        status: "success",
+        email: "Silas22@example.com",
+    },
+    {
+        id: "bhqecj4p",
+        amount: 721,
         status: "failed",
-        email: "carmella@hotmail.com",
+        email: "carmella@example.com",
+    },
+    {
+        id: "m5gr84i9",
+        amount: 316,
+        status: "success",
+        email: "ken99@example.com",
+    },
+    {
+        id: "3u1reuv4",
+        amount: 242,
+        status: "success",
+        email: "Abe45@example.com",
+    },
+    {
+        id: "derv1ws0",
+        amount: 837,
+        status: "processing",
+        email: "Monserrat44@example.com",
+    },
+    {
+        id: "5kma53ae",
+        amount: 874,
+        status: "success",
+        email: "Silas22@example.com",
+    },
+    {
+        id: "bhqecj4p",
+        amount: 721,
+        status: "failed",
+        email: "carmella@example.com",
+    },
+    {
+        id: "m5gr84i9",
+        amount: 316,
+        status: "success",
+        email: "ken99@example.com",
+    },
+    {
+        id: "3u1reuv4",
+        amount: 242,
+        status: "success",
+        email: "Abe45@example.com",
+    },
+    {
+        id: "derv1ws0",
+        amount: 837,
+        status: "processing",
+        email: "Monserrat44@example.com",
+    },
+    {
+        id: "5kma53ae",
+        amount: 874,
+        status: "success",
+        email: "Silas22@example.com",
+    },
+    {
+        id: "bhqecj4p",
+        amount: 721,
+        status: "failed",
+        email: "carmella@example.com",
+    },
+    {
+        id: "m5gr84i9",
+        amount: 316,
+        status: "success",
+        email: "ken99@example.com",
+    },
+    {
+        id: "3u1reuv4",
+        amount: 242,
+        status: "success",
+        email: "Abe45@example.com",
+    },
+    {
+        id: "derv1ws0",
+        amount: 837,
+        status: "processing",
+        email: "Monserrat44@example.com",
+    },
+    {
+        id: "5kma53ae",
+        amount: 874,
+        status: "success",
+        email: "Silas22@example.com",
+    },
+    {
+        id: "bhqecj4p",
+        amount: 721,
+        status: "failed",
+        email: "carmella@example.com",
+    },
+    {
+        id: "m5gr84i9",
+        amount: 316,
+        status: "success",
+        email: "ken99@example.com",
+    },
+    {
+        id: "3u1reuv4",
+        amount: 242,
+        status: "success",
+        email: "Abe45@example.com",
+    },
+    {
+        id: "derv1ws0",
+        amount: 837,
+        status: "processing",
+        email: "Monserrat44@example.com",
+    },
+    {
+        id: "5kma53ae",
+        amount: 874,
+        status: "success",
+        email: "Silas22@example.com",
+    },
+    {
+        id: "bhqecj4p",
+        amount: 721,
+        status: "failed",
+        email: "carmella@example.com",
+    },
+    {
+        id: "m5gr84i9",
+        amount: 316,
+        status: "success",
+        email: "ken99@example.com",
+    },
+    {
+        id: "3u1reuv4",
+        amount: 242,
+        status: "success",
+        email: "Abe45@example.com",
+    },
+    {
+        id: "derv1ws0",
+        amount: 837,
+        status: "processing",
+        email: "Monserrat44@example.com",
+    },
+    {
+        id: "5kma53ae",
+        amount: 874,
+        status: "success",
+        email: "Silas22@example.com",
+    },
+    {
+        id: "bhqecj4p",
+        amount: 721,
+        status: "failed",
+        email: "carmella@example.com",
+    },
+
+    {
+        id: "m5gr84i9",
+        amount: 316,
+        status: "success",
+        email: "ken99@example.com",
+    },
+    {
+        id: "3u1reuv4",
+        amount: 242,
+        status: "success",
+        email: "Abe45@example.com",
+    },
+    {
+        id: "derv1ws0",
+        amount: 837,
+        status: "processing",
+        email: "Monserrat44@example.com",
+    },
+    {
+        id: "5kma53ae",
+        amount: 874,
+        status: "success",
+        email: "Silas22@example.com",
+    },
+    {
+        id: "bhqecj4p",
+        amount: 721,
+        status: "failed",
+        email: "carmella@example.com",
+    },
+    {
+        id: "m5gr84i9",
+        amount: 316,
+        status: "success",
+        email: "ken99@example.com",
+    },
+    {
+        id: "3u1reuv4",
+        amount: 242,
+        status: "success",
+        email: "Abe45@example.com",
+    },
+    {
+        id: "derv1ws0",
+        amount: 837,
+        status: "processing",
+        email: "Monserrat44@example.com",
+    },
+    {
+        id: "5kma53ae",
+        amount: 874,
+        status: "success",
+        email: "Silas22@example.com",
+    },
+    {
+        id: "bhqecj4p",
+        amount: 721,
+        status: "failed",
+        email: "carmella@example.com",
     },
 ]
 
@@ -180,9 +425,6 @@ export function DataTableDemo() {
     const [columnVisibility, setColumnVisibility] =
         React.useState<VisibilityState>({})
     const [rowSelection, setRowSelection] = React.useState({})
-    const [pageSize, setPageSize] = React.useState(10) // Mặc định hiển thị 10 dòng trên 1 trang
-    const [pageIndex, setPageIndex] = React.useState(0);
-
 
     const table = useReactTable({
         data,
@@ -200,21 +442,12 @@ export function DataTableDemo() {
             columnFilters,
             columnVisibility,
             rowSelection,
-            pagination: {
-                pageSize,
-                pageIndex, // Luôn bắt đầu từ trang đầu tiên khi load dữ liệu
-            },
-        },
-        onPaginationChange: (updater) => {
-            const newPagination = typeof updater === "function" ? updater({ pageSize, pageIndex }) : updater;
-            setPageIndex(newPagination.pageIndex);
-            setPageSize(newPagination.pageSize);
         },
     })
 
     return (
         <div className="w-full">
-            <div className="flex items-center py-4 space-x-2">
+            <div className="flex items-center py-4">
                 <Input
                     placeholder="Filter emails..."
                     value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
@@ -224,34 +457,49 @@ export function DataTableDemo() {
                     className="max-w-sm"
                 />
             </div>
-
             <div className="rounded-md border">
                 <Table>
                     <TableHeader>
                         {table.getHeaderGroups().map((headerGroup) => (
                             <TableRow key={headerGroup.id}>
-                                {headerGroup.headers.map((header) => (
-                                    <TableHead key={header.id}>
-                                        {flexRender(header.column.columnDef.header, header.getContext())}
-                                    </TableHead>
-                                ))}
+                                {headerGroup.headers.map((header) => {
+                                    return (
+                                        <TableHead key={header.id}>
+                                            {header.isPlaceholder
+                                                ? null
+                                                : flexRender(
+                                                    header.column.columnDef.header,
+                                                    header.getContext()
+                                                )}
+                                        </TableHead>
+                                    )
+                                })}
                             </TableRow>
                         ))}
                     </TableHeader>
                     <TableBody>
                         {table.getRowModel().rows?.length ? (
                             table.getRowModel().rows.map((row) => (
-                                <TableRow key={row.id} data-state={row.getIsSelected() && "selected"}>
+                                <TableRow
+                                    key={row.id}
+                                    data-state={row.getIsSelected() && "selected"}
+                                >
                                     {row.getVisibleCells().map((cell) => (
                                         <TableCell key={cell.id}>
-                                            {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                                            {flexRender(
+                                                cell.column.columnDef.cell,
+                                                cell.getContext()
+                                            )}
                                         </TableCell>
                                     ))}
                                 </TableRow>
                             ))
                         ) : (
                             <TableRow>
-                                <TableCell colSpan={columns.length} className="h-24 text-center">
+                                <TableCell
+                                    colSpan={columns.length}
+                                    className="h-24 text-center"
+                                >
                                     No results.
                                 </TableCell>
                             </TableRow>
@@ -259,58 +507,89 @@ export function DataTableDemo() {
                     </TableBody>
                 </Table>
             </div>
-
-            <div className="flex items-center justify-between py-4">
-                <div className="text-sm text-muted-foreground">
-                    {table.getFilteredSelectedRowModel().rows.length} of{" "}
-                    {table.getFilteredRowModel().rows.length} row(s) selected.
+            <div className="flex items-center justify-end space-x-2 py-4">
+                <div className="flex-1 text-sm text-muted-foreground">
+                    {table.getState().pagination.pageIndex * table.getState().pagination.pageSize + 1} -{" "}
+                    {Math.min(
+                        (table.getState().pagination.pageIndex + 1) * table.getState().pagination.pageSize,
+                        table.getFilteredRowModel().rows.length
+                    )}{" "}
+                    of {table.getFilteredRowModel().rows.length} row(s) selected.
                 </div>
 
-                {/* Phần phân trang + Rows per page */}
-                <div className="flex items-center space-x-4">
-                    {/* Rows per page */}
-                    <div className="flex items-center space-x-2">
-                        <span className="text-sm">Rows per page:</span>
-                        <select
-                            className="border p-1 rounded-md text-sm"
-                            value={pageSize}
-                            onChange={(e) => setPageSize(Number(e.target.value))}
-                        >
-                            {[10, 25, 50, 100].map((size) => (
-                                <option key={size} value={size}>
-                                    {size}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
+                <div className="flex items-center space-x-2">
+                    <label htmlFor="rowsPerPage" className="text-sm">
+                        Rows per page:
+                    </label>
+                    <select
+                        id="rowsPerPage"
+                        value={table.getState().pagination.pageSize}
+                        onChange={(e) =>
+                            table.setPageSize(Number(e.target.value)) // Set new page size
+                        }
+                        className="border rounded-md p-2 text-sm w-[95px] text-center   "
+                    >
+                        <option value={10}>10</option>
+                        <option value={25}>25</option>
+                        <option value={50}>50</option>
+                        <option value={75}>75</option>
+                        <option value={100}>100</option>
+                    </select>
+                </div>
 
-                    {/* Hiển thị số trang hiện tại */}
-                    <span className="text-sm">
-                        Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
-                    </span>
+                <div className="space-x-2">
+                    <Pagination>
+                        <PaginationContent>
+                            <PaginationItem>
+                                <PaginationPrevious
+                                    onClick={() => table.previousPage()}
+                                    className={table.getCanPreviousPage() ? '' : 'disabled'}
+                                />
+                            </PaginationItem>
 
-                    {/* Nút phân trang */}
-                    <div className="space-x-2">
-                        <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => setPageIndex((prev) => Math.max(prev - 1, 0))}
-                            disabled={!table.getCanPreviousPage()}
-                        >
-                            Previous
-                        </Button>
-                        <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => setPageIndex((prev) => Math.min(prev + 1, table.getPageCount() - 1))}
-                            disabled={!table.getCanNextPage()}
-                        >
-                            Next
-                        </Button>
-                    </div>
+                            {/* Loop over the page numbers to dynamically create PaginationItem */}
+                            {Array.from({ length: table.getPageCount() }, (_, index) => {
+                                const currentPage = table.getState().pagination.pageIndex;
+                                const totalPages = table.getPageCount();
+
+                                // Show first page and the three pages near the current page (before and after)
+                                if (index === 0 || index === totalPages - 1 ||
+                                    (index >= currentPage - 1 && index <= currentPage + 1)) {
+                                    return (
+                                        <PaginationItem key={index}>
+                                            <PaginationLink
+                                                href="#"
+                                                isActive={currentPage === index}
+                                                onClick={() => table.setPageIndex(index)} // Set the page index dynamically
+                                            >
+                                                {index + 1} {/* Display page numbers starting from 1 */}
+                                            </PaginationLink>
+                                        </PaginationItem>
+                                    );
+                                }
+
+                                // Show ellipsis if there are pages between the visible range
+                                if (index === currentPage - 2 || index === currentPage + 2) {
+                                    return (
+                                        <PaginationItem key={index}>
+                                            <PaginationEllipsis />
+                                        </PaginationItem>
+                                    );
+                                }
+
+                                return null; // Skip rendering for other pages
+                            })}
+
+                            <PaginationItem>
+                                <PaginationNext
+                                    onClick={() => table.nextPage()}
+                                    className={table.getCanNextPage() ? '' : 'disabled'}
+                                />
+                            </PaginationItem>
+                        </PaginationContent>
+                    </Pagination>
                 </div>
             </div>
         </div>
     )
 }
-
