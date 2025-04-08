@@ -43,7 +43,9 @@ export function NavDash({
               <CollapsibleTrigger asChild>
                 <SidebarMenuButton tooltip={item.title}>
                   {item.icon && <item.icon />}
-                  <span>{item.title}</span>
+                  <a href={item.url}>
+                    <span>{item.title}</span>
+                  </a>
                 </SidebarMenuButton>
               </CollapsibleTrigger>
             </SidebarMenuItem>

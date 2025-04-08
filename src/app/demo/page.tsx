@@ -13,12 +13,9 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { DataTableDemo } from "@/components/Table/DataTable"
 
-import { SectionCards } from "@/components/Chart/section-cards"
-import { ChartAreaInteractive } from "@/components/Chart/chart-area-interactive"
-import { PieChart1 } from "@/components/Chart/pie-chart"
-import { BarChart1 } from "@/components/Chart/bar-chart"
-import { LineChart1 } from "@/components/Chart/line-chart"
+// Hello
 
 export default function Page() {
   return (
@@ -44,24 +41,11 @@ export default function Page() {
             </Breadcrumb>
           </div>
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <div className="grid auto-rows-min gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-            <SectionCards />
-          </div>
-          <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div className="aspect-video rounded-xl bg-muted/50">
-                <PieChart1 />
-            </div>
-            <div className="aspect-video rounded-xl bg-muted/50">
-                <BarChart1 />
-            </div>
-            <div className="aspect-video rounded-xl bg-muted/50">
-                <LineChart1 />
-            </div>
-          </div>
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min">
-            <ChartAreaInteractive />
-          </div>
+        <div className="flex flex-1 flex-col gap-4 p-10 pt-0">
+          {/* <div className="grid auto-rows-min gap-4 md:grid-cols-12"> */}
+            <DataTableDemo />
+          {/* </div> */}
+          {/* <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" /> */}
         </div>
       </SidebarInset>
     </SidebarProvider>
