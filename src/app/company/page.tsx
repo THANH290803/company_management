@@ -4,8 +4,8 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
+  // BreadcrumbPage,
+  // BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import { Separator } from "@/components/ui/separator"
 import {
@@ -13,7 +13,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import { DataTableDemo } from "@/components/Table/DataTable"
+import { Company } from "@/components/Table/Company"
 
 // Hello
 
@@ -30,22 +30,19 @@ export default function Page() {
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
                   <BreadcrumbLink href="#">
-                    Building Your Application
+                    Quản lý công ty
                   </BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbSeparator className="hidden md:block" />
-                <BreadcrumbItem>
+                {/* <BreadcrumbSeparator className="hidden md:block" /> */}
+                {/* <BreadcrumbItem>
                   <BreadcrumbPage>Data Fetching</BreadcrumbPage>
-                </BreadcrumbItem>
+                </BreadcrumbItem> */}
               </BreadcrumbList>
             </Breadcrumb>
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-10 pt-0">
-          {/* <div className="grid auto-rows-min gap-4 md:grid-cols-12"> */}
-            <DataTableDemo />
-          {/* </div> */}
-          {/* <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" /> */}
+          <Company />
         </div>
       </SidebarInset>
     </SidebarProvider>

@@ -1,3 +1,8 @@
+"use client"
+
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
+
 import { AppSidebar } from "@/components/app-sidebar"
 import {
   Breadcrumb,
@@ -21,6 +26,15 @@ import { BarChart1 } from "@/components/Chart/bar-chart"
 import { LineChart1 } from "@/components/Chart/line-chart"
 
 export default function Page() {
+  const router = useRouter()
+
+  useEffect(() => {
+    const token = localStorage.getItem("token")
+    if (!token) {
+      router.push("/login")
+    }
+  }, [router])
+
   return (
     <SidebarProvider>
       <AppSidebar className="h-auto" />
