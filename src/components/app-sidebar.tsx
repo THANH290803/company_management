@@ -6,7 +6,7 @@ import {
   Building,
   // Frame,
   GalleryVerticalEnd,
-  Map,
+  // Map,
   // PieChart,
   Settings2,
   Briefcase,

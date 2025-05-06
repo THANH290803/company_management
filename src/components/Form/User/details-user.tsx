@@ -8,11 +8,11 @@ import { z } from "zod"
 import {
     Form,
     FormControl,
-    FormDescription,
+    // FormDescription,
     FormField,
     FormItem,
     FormLabel,
-    FormMessage,
+    // FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { useUsers, User } from "@/lib/useUser"
@@ -70,7 +70,7 @@ export function UserDetails() {
                 <FormField
                     control={form.control}
                     name="username"
-                    render={({ field }) => (
+                    render={({  }) => (
                         <FormItem className="w-[550px]">
                             <FormLabel>Tên người dùng</FormLabel>
                             <FormControl style={{ marginBottom: '15px' }}>
