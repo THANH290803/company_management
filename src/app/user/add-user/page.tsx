@@ -14,8 +14,7 @@ import {
     SidebarProvider,
     SidebarTrigger,
 } from "@/components/ui/sidebar"
-
-import { EditDepartment } from "@/components/Form/Department/edit-department"
+import { AddUser } from "@/components/Form/User/add-user"
 
 // Hello
 
@@ -31,22 +30,22 @@ export default function Page() {
                         <Breadcrumb>
                             <BreadcrumbList>
                                 <BreadcrumbItem className="hidden md:block">
-                                    <BreadcrumbLink href="/department">
-                                        Quản lý phòng bạn
+                                    <BreadcrumbLink href="#">
+                                        Quản lý người dùng
                                     </BreadcrumbLink>
                                 </BreadcrumbItem>
                                 <BreadcrumbSeparator className="hidden md:block" />
                                 <BreadcrumbItem>
-                                    <BreadcrumbPage>Sửa phòng ban</BreadcrumbPage>
+                                    <BreadcrumbPage>Thêm người dùng</BreadcrumbPage>
                                 </BreadcrumbItem>
                             </BreadcrumbList>
                         </Breadcrumb>
                     </div>
                 </header>
                 <div className="flex flex-1 flex-col items-center justify-center p-20 pt-0">
-                    <h1 className="text-2xl font-semibold" style={{ marginBottom: '50px' }}>Sửa phòng ban</h1>
+                    <h1 className="text-2xl font-semibold" style={{ marginBottom: '50px' }}>Chi tiết người dùng</h1>
                     <Suspense fallback={<div>Đang tải...</div>}>
-                        <EditDepartment />
+                        <AddUser />
                     </Suspense>
                 </div>
             </SidebarInset>

@@ -4,13 +4,14 @@ import * as React from "react"
 import {
   BookOpen,
   Building,
-  Frame,
+  // Frame,
   GalleryVerticalEnd,
   Map,
-  PieChart,
+  // PieChart,
   Settings2,
   Briefcase,
-  LayoutDashboard
+  LayoutDashboard,
+  Users
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -44,13 +45,13 @@ const data = {
   ],
   navMain: [
     {
-      title: "Quản lý công ty",
-      url: "/company",
+      title: "demo1",
+      url: "#",
       icon: Briefcase,
     },
     {
-      title: "Quản lý phòng ban",
-      url: "/department",
+      title: "demo2",
+      url: "#",
       icon: Building,
     },
     {
@@ -102,19 +103,19 @@ const data = {
   ],
   projects: [
     {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
+      name: "Quản lý công ty",
+      url: "/company",
+      icon: Briefcase,
     },
     {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: PieChart,
+      name: "Quản lý phòng ban",
+      url: "/department",
+      icon: Building,
     },
     {
-      name: "Travel",
-      url: "#",
-      icon: Map,
+      name: "Quản lý người dùng",
+      url: "/user",
+      icon: Users,
     },
   ],
 }

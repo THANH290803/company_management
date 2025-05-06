@@ -14,7 +14,7 @@ import {
     SidebarTrigger,
 } from "@/components/ui/sidebar"
 
-import { AddDepartment } from "@/components/Form/department/add-department"
+import { AddDepartment } from "@/components/Form/Department/add-department"
 
 // Hello
 

@@ -31,7 +31,7 @@ export function NavMain({
 }) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>General</SidebarGroupLabel>
+      <SidebarGroupLabel>Tổng quan</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
           <Collapsible
