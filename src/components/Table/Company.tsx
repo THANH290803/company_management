@@ -109,6 +109,14 @@ export function Company() {
     // Dialog visibility state
     const [isDialogOpen, setIsDialogOpen] = useState(false);
 
+    const openAddDialog = () => {
+        setName("");
+        setEmail("");
+        setPhone("");
+        setIsHeadquarter(false);
+        setIsDialogOpen(true);
+    };
+
     // Handle form submission
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -242,25 +250,36 @@ export function Company() {
             <div className="flex items-center justify-between">
                 <h1 style={{ fontWeight: 'bold', fontSize: '24px' }}>Danh sách công ty</h1>
                 {/* <Button className="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-md">Thêm công ty</Button> */}
-                <Dialog open={isDialogOpen} onOpenChange={(open) => {
-                    setIsDialogOpen(open);
-                    if (!open) {
-                        // Reset form when the dialog is closed
-                        setName("");
-                        setEmail("");
-                        setPhone("");
-                        setIsHeadquarter(false);
-                        setEditCompany(null);
-                    }
-                }}>
+                <Dialog
+                    open={isDialogOpen}
+                    onOpenChange={(open) => {
+                        setIsDialogOpen(open);
+                        if (open) {
+                            if (!editCompany) {
+                                // Chỉ reset giá trị khi không phải sửa công ty (mở form thêm công ty mới)
+                                setName("");
+                                setEmail("");
+                                setPhone("");
+                                setIsHeadquarter(false);
+                            }
+                        } else {
+                            // Đảm bảo reset form khi đóng dialog
+                            setName("");
+                            setEmail("");
+                            setPhone("");
+                            setIsHeadquarter(false);
+                            setEditCompany(null);  // Đặt lại editCompany khi đóng form
+                        }
+                    }}
+                >
                     <DialogTrigger asChild>
-                        <Button variant="outline" className="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-md">
+                        <Button variant="outline" className="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-md" onClick={openAddDialog}>
                             Thêm công ty
                         </Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[425px] md:max-w-[500px] lg:max-w-[600px]">
                         <DialogHeader>
-                            <DialogTitle>Edit profile</DialogTitle>
+                            <DialogTitle>Add profile</DialogTitle>
                             <DialogDescription>
                                 {"Make changes to your profile here. Click save when you're done."}
                             </DialogDescription>

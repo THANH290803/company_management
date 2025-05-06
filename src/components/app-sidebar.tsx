@@ -3,7 +3,7 @@
 import * as React from "react"
 import {
   BookOpen,
-  Bot,
+  Building,
   Frame,
   GalleryVerticalEnd,
   Map,
@@ -30,7 +30,7 @@ import { NavDash } from "./nav-dashboard"
 const data = {
   teams: [
     {
-      name: "Acme Inc",
+      name: "QTHL GROUP",
       logo: GalleryVerticalEnd,
       plan: "Enterprise",
     },
@@ -49,23 +49,9 @@ const data = {
       icon: Briefcase,
     },
     {
-      title: "Models",
-      url: "#",
-      icon: Bot,
-      items: [
-        {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
-      ],
+      title: "Quản lý phòng ban",
+      url: "/department",
+      icon: Building,
     },
     {
       title: "Documentation",

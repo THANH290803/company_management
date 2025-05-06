@@ -27,6 +27,7 @@ export default function LoginPage() {
           src="/images/backgroud-login.jpg"
           alt="Image"
           className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+          fill
         />
       </div>
     </div>
